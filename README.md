@@ -7,6 +7,7 @@ Ny nettside for Tom Langen. Lyst og moderne design, med varm oransje profilfarge
 - `index.html`: forside med tjenester, presentasjon og utvalgte prosjekter
 - `gulvstop.html`: gulvstøp, forskaling, trapper, murer og fundamentering
 - `Bilder.html`: ni prosjekter med bildegallerier
+- `omtaler.html`: egen side med alle 27 kundeomtaler, tilgjengelig fra hovedmeny og forside
 - `ommegogomtaler.html`: om Tom, 27 originale kundeomtaler og avisutklipp
 - `filmer.html`: ni filmer med lenker til YouTube
 - `contact.html`: kontakt, telefontider, adresser og befaring
@@ -39,3 +40,5 @@ Den gamle siden oppga både Gressvikveien 32 og 32c. Her brukes 32c fra bunnteks
 ## Kontroll
 
 `npm run check` kontrollerer lokale lenker, bilder, ankerlenker, sideoverskrifter og at de ni prosjektene, ni filmene og 27 kundeomtalene er med. JavaScript-syntaks kontrolleres også. Visuell nettleserkontroll var ikke tilgjengelig i byggeøkten fordi Sites-forhåndsvisningens nødvendige verktøy manglet.
+
+Kundeomtaler i prosjektgalleriene vises uten beskjæring i egne felt. Forsiden inneholder tre ordrette utdrag fra kundevurderinger med direkte lenker til de fullstendige vurderingene. Forsidebildet er valgt av brukeren fra Hvalstad-prosjektet.
