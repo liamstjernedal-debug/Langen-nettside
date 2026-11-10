@@ -1,0 +1,10 @@
+{
+  "name": "handverkeren-langen",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Nettside for Håndverkeren Langen",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs && node --check app.js"
+  }
+}
