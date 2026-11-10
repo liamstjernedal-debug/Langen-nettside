@@ -7,3 +7,18 @@
 @media(min-width:761px) and (max-width:1100px){nav{gap:12px;font-size:12px}.brand{width:165px}.quote-card{padding:22px}.quote-card blockquote{font-size:20px}}
 @media(max-width:760px){.project-review{grid-template-columns:1fr;padding:18px;gap:20px}.project-review h3{font-size:23px;margin-bottom:12px}.all-reviews .reviews{grid-template-columns:1fr;gap:20px}.all-reviews .reviews .image-button{padding:10px}.quote-grid{grid-template-columns:1fr;gap:20px}.quote-card{padding:25px}.quote-card .eyebrow{min-height:0}.quote-card blockquote{font-size:23px}.home-reviews .section-title>.button{margin-top:24px}.hero-review-link{font-size:11px}nav{gap:9px}}
 .hero-photo{object-position:70% 50%}
+@media(prefers-reduced-motion:no-preference){
+ .motion-reveal{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s cubic-bezier(.2,.65,.3,1)}
+ .motion-reveal.is-visible,.motion-reveal:focus-within{opacity:1;transform:translateY(0)}
+ .hero-copy>.eyebrow,.hero-copy>h1,.hero-copy>p,.hero-copy>.actions{animation:soft-enter .75s both cubic-bezier(.2,.65,.3,1)}
+ .hero-copy>h1{animation-delay:.08s}.hero-copy>p{animation-delay:.16s}.hero-copy>.actions{animation-delay:.24s}
+ .hero-visual{animation:photo-enter 1s both ease-out}
+ .service>img,.featured img,.video-cover img{transition:transform .5s ease,filter .3s ease,opacity .3s ease}
+ .service:hover>img,.featured>a:hover img{transform:translateY(-5px)}
+ .video-cover{overflow:hidden}.video-cover:hover img{transform:scale(1.035);opacity:1}
+ .play{transition:background .25s,color .25s}.video-cover:hover .play{background:var(--orange);color:#fff}
+ .button>span,.textlink>span{transition:transform .25s ease}.button:hover>span{transform:translate(3px,-3px)}.textlink:hover>span{transform:translateX(4px)}
+ .photo-note>a{transition:background .25s,transform .25s}.photo-note>a:hover{background:#963e1e;transform:translate(2px,-2px)}
+ @keyframes soft-enter{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+ @keyframes photo-enter{from{opacity:0;transform:translateX(15px)}to{opacity:1;transform:translateX(0)}}
+}
