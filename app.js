@@ -1,17 +1,28 @@
 const menu = document.querySelector('.menu');
 const nav = document.querySelector('#navigation');
+function closeMenu({ returnFocus = false } = {}) {
+  nav?.classList.remove('open');
+  menu?.setAttribute('aria-expanded', 'false');
+  if (returnFocus) menu?.focus();
+}
 menu?.addEventListener('click', () => {
   const expanded = menu.getAttribute('aria-expanded') === 'true';
   menu.setAttribute('aria-expanded', String(!expanded));
-  nav.classList.toggle('open', !expanded);
+  nav?.classList.toggle('open', !expanded);
+});
+nav?.addEventListener('click', event => {
+  if (event.target.closest('a')) closeMenu();
+});
+document.addEventListener('click', event => {
+  if (!event.target.closest('header')) closeMenu();
 });
 document.addEventListener('keydown', event => {
   if (event.key === 'Escape' && nav?.classList.contains('open')) {
-    nav.classList.remove('open');
-    menu.setAttribute('aria-expanded', 'false');
-    menu.focus();
+    closeMenu({ returnFocus: true });
   }
 });
+const mobileNavigation = window.matchMedia('(max-width: 900px)');
+mobileNavigation.addEventListener('change', () => closeMenu());
 const lightbox = document.querySelector('#lightbox');
 document.querySelectorAll('[data-lightbox]').forEach(button => {
   button.addEventListener('click', () => {

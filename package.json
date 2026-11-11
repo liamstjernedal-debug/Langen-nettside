@@ -5,6 +5,6 @@
   "description": "Nettside for Håndverkeren Langen",
   "scripts": {
     "build": "node scripts/build.mjs",
-    "check": "node scripts/check.mjs && node --check app.js"
+    "check": "node scripts/check.mjs && node --check app.js && node scripts/check-mobile-menu.cjs"
   }
 }
