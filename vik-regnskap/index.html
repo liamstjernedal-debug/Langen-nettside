@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="nb">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vik Regnskap — Tall i orden. Tid til det som teller.</title>
+  <meta name="description" content="Vik Regnskap tar seg av bokføring, lønn, MVA, årsoppgjør og rådgivning for små og mellomstore bedrifter. Fast pris, faste folk og svar samme dag.">
+  <meta name="theme-color" content="#11201b">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip" href="#innhold">Hopp til innhold</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="top">
+    <div class="wrap header__inner">
+      <a class="brand" href="#top" aria-label="Vik Regnskap – til toppen">
+        <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true">
+          <rect x="1" y="1" width="38" height="38" rx="10" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M10 12 L20 29 L30 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="8" y1="33" x2="32" y2="33" stroke="var(--brass)" stroke-width="1.5"/>
+        </svg>
+        <span class="brand__name">Vik <em>Regnskap</em></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Hovedmeny">
+        <a href="#tjenester">Tjenester</a>
+        <a href="#metode">Slik jobber vi</a>
+        <a href="#frister">Frister</a>
+        <a href="#pakker">Pakker</a>
+        <a href="#om">Om oss</a>
+        <a class="btn btn--small" href="#kontakt">Book en prat</a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Åpne meny" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="innhold">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow reveal"><span class="dot"></span> Regnskapsbyrå for små og mellomstore bedrifter</p>
+          <h1 class="hero__title reveal">
+            Tall i orden.<br>
+            <em>Tid til det</em><br>
+            som teller.
+          </h1>
+          <p class="hero__lead reveal">
+            Vi fører regnskapet, kjører lønna og holder styr på fristene, slik at du kan bruke tiden på kundene dine. Fast pris, faste folk og svar samme dag.
+          </p>
+          <div class="hero__cta reveal">
+            <a class="btn" href="#kontakt">Book en uforpliktende prat <span class="arrow">→</span></a>
+            <a class="link" href="#tjenester">Se hva vi gjør</a>
+          </div>
+
+          <dl class="hero__facts reveal">
+            <div><dt>Svar</dt><dd>Samme virkedag</dd></div>
+            <div><dt>Pris</dt><dd>Fast per måned</dd></div>
+            <div><dt>Kontakt</dt><dd>Én fast rådgiver</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero__visual reveal">
+          <!-- BILDE: hero.jpg -->
+          <figure class="slot slot--hero" data-label="hero.jpg · Rolig kontormiljø eller portrett · 1200×1500">
+            <img src="bilder/hero.jpg" alt="Rådgiver hos Vik Regnskap i et lyst kontor" loading="eager">
+          </figure>
+
+          <!-- Ledger-kort -->
+          <aside class="ledger-card" aria-label="Eksempel på månedsrapport">
+            <header class="ledger-card__head">
+              <span>Månedsrapport</span>
+              <span class="mono" id="ledger-month">Oktober</span>
+            </header>
+            <ul class="ledger-card__rows">
+              <li><span>Driftsinntekter</span><span class="mono" data-count="842300">0</span></li>
+              <li><span>Driftskostnader</span><span class="mono neg" data-count="-611900">0</span></li>
+              <li class="total"><span>Driftsresultat</span><span class="mono" data-count="230400">0</span></li>
+            </ul>
+            <svg class="spark" viewBox="0 0 220 56" preserveAspectRatio="none" aria-hidden="true">
+              <path class="spark__area" d="M0 46 L20 40 L40 43 L60 33 L80 36 L100 26 L120 29 L140 19 L160 22 L180 12 L200 14 L220 6 L220 56 L0 56 Z"/>
+              <path class="spark__line" d="M0 46 L20 40 L40 43 L60 33 L80 36 L100 26 L120 29 L140 19 L160 22 L180 12 L200 14 L220 6"/>
+            </svg>
+            <footer class="ledger-card__foot">
+              <span class="tick">✓</span> Avstemt og klar for gjennomgang
+            </footer>
+          </aside>
+        </div>
+      </div>
+
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker__track">
+          <span>Bokføring</span><i>·</i><span>Lønn &amp; A-melding</span><i>·</i><span>MVA</span><i>·</i><span>Årsoppgjør</span><i>·</i><span>Skattemelding</span><i>·</i><span>Rådgivning</span><i>·</i><span>Oppstart</span><i>·</i>
+          <span>Bokføring</span><i>·</i><span>Lønn &amp; A-melding</span><i>·</i><span>MVA</span><i>·</i><span>Årsoppgjør</span><i>·</i><span>Skattemelding</span><i>·</i><span>Rådgivning</span><i>·</i><span>Oppstart</span><i>·</i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INTRO / LØFTE ============ -->
+    <section class="intro">
+      <div class="wrap intro__grid">
+        <p class="kicker reveal">01 — Hvorfor Vik</p>
+        <h2 class="intro__statement reveal">
+          Et godt regnskap er ikke bare riktige tall. Det er <em>ro i magen</em> når momsen forfaller, og svar du kan ta beslutninger på.
+        </h2>
+      </div>
+    </section>
+
+    <!-- ============ TJENESTER (hovedbok) ============ -->
+    <section class="services" id="tjenester">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker reveal">02 — Tjenester</p>
+          <h2 class="reveal">Hovedboka vår</h2>
+          <p class="section-head__lead reveal">Velg det du trenger, eller la oss ta alt. Kontonumrene er ekte, så regnskapsfolk får også noe å smile av.</p>
+        </div>
+
+        <ol class="ledger">
+          <li class="ledger__row reveal">
+            <span class="ledger__acct mono">1000</span>
+            <div class="ledger__main">
+              <h3>Løpende bokføring</h3>
+              <p>Bilag inn via app eller e-post, og vi tar resten. Bankavstemming, reskontro og ryddige perioder hver måned.</p>
+            </div>
+            <span class="ledger__tag">Hver måned</span>
+          </li>
+          <li class="ledger__row reveal">
+            <span class="ledger__acct mono">5000</span>
+            <div class="ledger__main">
+              <h3>Lønn og A-melding</h3>
+              <p>Lønnskjøring, feriepenger, reiseregninger og A-melding innen den 5. Ansatte får lønnsslippen digitalt.</p>
+            </div>
+            <span class="ledger__tag">Innen den 5.</span>
+          </li>
+          <li class="ledger__row reveal">
+            <span class="ledger__acct mono">2700</span>
+            <div class="ledger__main">
+              <h3>MVA-melding</h3>
+              <p>Vi avstemmer, kontrollerer og leverer MVA-meldingen hver termin, og sier ifra i god tid om hva du skal betale.</p>
+            </div>
+            <span class="ledger__tag">Seks terminer</span>
+          </li>
+          <li class="ledger__row reveal">
+            <span class="ledger__acct mono">8800</span>
+            <div class="ledger__main">
+              <h3>Årsoppgjør og skattemelding</h3>
+              <p>Årsregnskap, noter, skattemelding og aksjonærregisteroppgave. Ferdig før fristen, ikke på fristen.</p>
+            </div>
+            <span class="ledger__tag">Årlig</span>
+          </li>
+          <li class="ledger__row reveal">
+            <span class="ledger__acct mono">6700</span>
+            <div class="ledger__main">
+              <h3>Rådgivning</h3>
+              <p>Budsjett, likviditet, utbytte eller lønn, investeringer og nøkkeltall. Vi oversetter tallene til neste steg.</p>
+            </div>
+            <span class="ledger__tag">Når du trenger det</span>
+          </li>
+          <li class="ledger__row reveal">
+            <span class="ledger__acct mono">2000</span>
+            <div class="ledger__main">
+              <h3>Oppstart av selskap</h3>
+              <p>ENK eller AS? Vi hjelper deg med valg av selskapsform, stiftelse, registrering og et regnskapsoppsett som holder.</p>
+            </div>
+            <span class="ledger__tag">Fra dag én</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ BILDEBÅND ============ -->
+    <section class="band" aria-label="Stemningsbilde">
+      <!-- BILDE: band.jpg -->
+      <figure class="slot slot--band" data-label="band.jpg · Bredt stemningsbilde, for eksempel kystlandskap eller arbeidsbord · 2400×1000">
+        <img src="bilder/band.jpg" alt="" loading="lazy">
+      </figure>
+      <blockquote class="band__quote reveal">
+        <p>«Vi gjør det kompliserte enkelt, og det enkle riktig.»</p>
+      </blockquote>
+    </section>
+
+    <!-- ============ METODE ============ -->
+    <section class="method" id="metode">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker reveal">03 — Slik jobber vi</p>
+          <h2 class="reveal method__title">Fire steg til et regnskap du slipper å tenke på</h2>
+        </div>
+
+        <div class="steps">
+          <article class="step reveal">
+            <span class="step__num">I</span>
+            <h3>Kartlegging</h3>
+            <p>En uforpliktende prat om bedriften, dagens system og hva som skaper hodebry i dag.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step__num">II</span>
+            <h3>Fast tilbud</h3>
+            <p>Du får en fast månedspris med tydelig omfang. Ingen overraskelser på fakturaen.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step__num">III</span>
+            <h3>Rolig overgang</h3>
+            <p>Vi tar kontakt med tidligere regnskapsfører og flytter alt for deg, uten avbrudd i drift eller lønn.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step__num">IV</span>
+            <h3>Løpende oversikt</h3>
+            <p>Månedlig rapport på ett ark, faste avstemminger og en rådgiver som kjenner bedriften din.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FRISTER ============ -->
+    <section class="deadlines" id="frister">
+      <div class="wrap deadlines__grid">
+        <div class="deadlines__intro">
+          <p class="kicker kicker--light reveal">04 — Frister</p>
+          <h2 class="reveal">Vi passer klokka.<br><em>Du driver bedriften.</em></h2>
+          <p class="reveal">Her er de neste offentlige fristene for de fleste bedrifter. Hos oss er alt levert i god tid før.</p>
+
+          <div class="countdown reveal" aria-live="polite">
+            <p class="countdown__label">Neste frist</p>
+            <p class="countdown__name" id="cd-name">–</p>
+            <p class="countdown__days"><span id="cd-days">–</span> <small>dager igjen</small></p>
+            <p class="countdown__date mono" id="cd-date"></p>
+          </div>
+        </div>
+
+        <ol class="deadline-list reveal" id="deadline-list" aria-label="Kommende frister">
+          <!-- Fylles av script.js -->
+        </ol>
+      </div>
+      <p class="wrap deadlines__note">Fristene er veiledende. Faller en frist på helg eller helligdag, flyttes den normalt til neste virkedag.</p>
+    </section>
+
+    <!-- ============ PAKKER ============ -->
+    <section class="plans" id="pakker">
+      <div class="wrap">
+        <div class="section-head section-head--center">
+          <p class="kicker reveal">05 — Pakker</p>
+          <h2 class="reveal">Fast pris. Tydelig omfang.</h2>
+          <p class="section-head__lead reveal">Prisen avtales etter en gratis gjennomgang av bedriften din, og ligger fast hver måned.</p>
+        </div>
+
+        <div class="plans__grid">
+          <article class="plan reveal">
+            <h3>Enkel</h3>
+            <p class="plan__for">For enkeltpersonforetak og små AS uten ansatte.</p>
+            <ul>
+              <li>Løpende bokføring</li>
+              <li>MVA-melding</li>
+              <li>Årsoppgjør og skattemelding</li>
+              <li>Svar på e-post samme dag</li>
+            </ul>
+            <a class="btn btn--ghost" href="#kontakt">Få tilbud</a>
+          </article>
+
+          <article class="plan plan--featured reveal">
+            <span class="plan__badge">Mest valgt</span>
+            <h3>Vekst</h3>
+            <p class="plan__for">For bedrifter med ansatte som vil ha full kontroll.</p>
+            <ul>
+              <li>Alt i Enkel</li>
+              <li>Lønn og A-melding</li>
+              <li>Månedsrapport med nøkkeltall</li>
+              <li>Fast rådgiver på telefon</li>
+            </ul>
+            <a class="btn" href="#kontakt">Få tilbud</a>
+          </article>
+
+          <article class="plan reveal">
+            <h3>Partner</h3>
+            <p class="plan__for">For deg som vil ha en økonomifunksjon, uten å ansette en.</p>
+            <ul>
+              <li>Alt i Vekst</li>
+              <li>Budsjett og likviditetsprognose</li>
+              <li>Kvartalsvis styringsmøte</li>
+              <li>Fakturering og betalinger</li>
+            </ul>
+            <a class="btn btn--ghost" href="#kontakt">Få tilbud</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OM OSS ============ -->
+    <section class="about" id="om">
+      <div class="wrap about__grid">
+        <div class="about__media reveal">
+          <!-- BILDE: team.jpg -->
+          <figure class="slot slot--team" data-label="team.jpg · Teamet eller daglig leder · 1200×1400">
+            <img src="bilder/team.jpg" alt="Menneskene bak Vik Regnskap" loading="lazy">
+          </figure>
+          <!-- BILDE: detalj.jpg -->
+          <figure class="slot slot--detail" data-label="detalj.jpg · Nærbilde, for eksempel kaffe og notatbok · 800×800">
+            <img src="bilder/detalj.jpg" alt="" loading="lazy">
+          </figure>
+        </div>
+
+        <div class="about__copy">
+          <p class="kicker reveal">06 — Om oss</p>
+          <h2 class="reveal">Små nok til å kjenne deg.<br><em>Store nok til å levere.</em></h2>
+          <p class="reveal">
+            Vik Regnskap er et lokalt regnskapsbyrå med moderne verktøy og gammeldags service. Vi tror på faste kontaktpersoner, korte svartider og regnskap som faktisk blir brukt til noe.
+          </p>
+          <p class="reveal">
+            Kundene våre er håndverkere, butikker, konsulenter og gründere. Felles for dem er at de heller vil drive bedriften enn å lete etter kvitteringer.
+          </p>
+
+          <ul class="promises reveal">
+            <li><strong>Svar samme virkedag</strong><span>På telefon og e-post.</span></li>
+            <li><strong>Ingen tilleggsfaktura</strong><span>Uten at vi har avtalt det først.</span></li>
+            <li><strong>Digitalt fra start</strong><span>Moderne skybaserte regnskapssystemer.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq">
+      <div class="wrap faq__grid">
+        <div>
+          <p class="kicker reveal">07 — Spørsmål</p>
+          <h2 class="reveal">Det folk lurer på</h2>
+        </div>
+        <div class="faq__list">
+          <details class="reveal">
+            <summary>Hvor vanskelig er det å bytte regnskapsfører?</summary>
+            <p>Ikke vanskelig i det hele tatt. Du gir oss fullmakt, og vi tar kontakten med din nåværende regnskapsfører og sørger for at historikk og tilganger blir overført.</p>
+          </details>
+          <details class="reveal">
+            <summary>Hvilket regnskapssystem bruker dere?</summary>
+            <p>Vi jobber i de vanligste skybaserte systemene. Bruker du allerede et system du er fornøyd med, kan du som regel beholde det.</p>
+          </details>
+          <details class="reveal">
+            <summary>Hva koster det?</summary>
+            <p>Det avhenger av antall bilag, ansatte og hvor mye du vil at vi skal gjøre. Etter en gratis gjennomgang får du en fast månedspris som gjelder til vi avtaler noe annet.</p>
+          </details>
+          <details class="reveal">
+            <summary>Jobber dere med kunder utenfor nærområdet?</summary>
+            <p>Ja. Alt kan gjøres digitalt, og vi møtes gjerne på video. Men vi setter like stor pris på en kaffe over bordet.</p>
+          </details>
+          <details class="reveal">
+            <summary>Jeg skal starte bedrift. Når bør jeg ta kontakt?</summary>
+            <p>Gjerne før du registrerer selskapet. Valg av selskapsform og oppsett i starten sparer deg for mye arbeid senere.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ KONTAKT ============ -->
+    <section class="contact" id="kontakt">
+      <div class="wrap contact__grid">
+        <div class="contact__copy">
+          <p class="kicker kicker--light reveal">08 — Kontakt</p>
+          <h2 class="reveal">La oss ta<br><em>en prat.</em></h2>
+          <p class="reveal">Fortell kort om bedriften din, så tar vi kontakt innen én virkedag. Første samtale er alltid gratis.</p>
+
+          <ul class="contact__info reveal">
+            <!-- TODO: Bytt til ekte kontaktinfo -->
+            <li><span>Telefon</span><a href="tel:+4700000000">+47 000 00 000</a></li>
+            <li><span>E-post</span><a href="mailto:post@vikregnskap.no">post@vikregnskap.no</a></li>
+            <li><span>Adresse</span><span>Gateadresse 1, 0000 Sted</span></li>
+            <li><span>Åpent</span><span>Man–fre 08–16</span></li>
+          </ul>
+        </div>
+
+        <form class="form reveal" id="contact-form" novalidate>
+          <div class="field">
+            <label for="f-name">Navn</label>
+            <input id="f-name" name="navn" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="f-company">Bedrift</label>
+            <input id="f-company" name="bedrift" type="text" autocomplete="organization">
+          </div>
+          <div class="field field--half">
+            <label for="f-email">E-post</label>
+            <input id="f-email" name="epost" type="email" autocomplete="email" required>
+          </div>
+          <div class="field field--half">
+            <label for="f-phone">Telefon</label>
+            <input id="f-phone" name="telefon" type="tel" autocomplete="tel">
+          </div>
+          <fieldset class="field chips">
+            <legend>Hva trenger du hjelp med?</legend>
+            <label><input type="checkbox" name="behov" value="Bokføring"><span>Bokføring</span></label>
+            <label><input type="checkbox" name="behov" value="Lønn"><span>Lønn</span></label>
+            <label><input type="checkbox" name="behov" value="MVA"><span>MVA</span></label>
+            <label><input type="checkbox" name="behov" value="Årsoppgjør"><span>Årsoppgjør</span></label>
+            <label><input type="checkbox" name="behov" value="Rådgivning"><span>Rådgivning</span></label>
+            <label><input type="checkbox" name="behov" value="Oppstart"><span>Oppstart</span></label>
+          </fieldset>
+          <div class="field">
+            <label for="f-msg">Melding</label>
+            <textarea id="f-msg" name="melding" rows="4" placeholder="Antall ansatte, bransje, dagens system …"></textarea>
+          </div>
+          <button class="btn btn--light" type="submit">Send forespørsel <span class="arrow">→</span></button>
+          <p class="form__status" id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div class="footer__brand">
+        <span class="brand__name">Vik <em>Regnskap</em></span>
+        <p>Tall i orden. Tid til det som teller.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Bunnmeny">
+        <a href="#tjenester">Tjenester</a>
+        <a href="#frister">Frister</a>
+        <a href="#pakker">Pakker</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+      <p class="footer__meta mono">
+        <!-- TODO: Legg inn ekte org.nr. -->
+        Org.nr. 000 000 000 · © <span id="year">2026</span> Vik Regnskap
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
