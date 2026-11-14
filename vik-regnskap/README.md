@@ -19,20 +19,11 @@ En frittstående nettside på én side for regnskapsbyrået Vik Regnskap. Siden 
 | FAQ | Fem spørsmål som kan åpnes og lukkes |
 | Kontakt | Skjema som åpner e-postprogrammet med ferdig utfylt tekst |
 
-## Bilder (til ChatGPT)
+## Bilder
 
-Legg bildene i mappen `bilder/` med **nøyaktig disse filnavnene**. Så lenge et bilde mangler, viser siden en stilren plassholder med filnavn og anbefalt størrelse.
+De fire bildefeltene er fylt med lokale JPG-bilder i `bilder/`: kontormiljø på forsiden, et bredt møteromsbilde, kontormiljø ved «Om oss» og kaffe i det runde detaljfeltet. Bildene følger størrelsene som var satt av i oppsettet og er komprimert for rask innlasting.
 
-| Filnavn | Hvor | Format | Forslag til motiv |
-|---|---|---|---|
-| `hero.jpg` | Hero, høyre side (buet topp) | 1200×1500 (4:5, stående) | Rådgiver i et lyst, rolig kontor eller et portrett. Naturlig lys, varme toner |
-| `band.jpg` | Bildebånd i full bredde | 2400×1000 (bredt) | Norsk kystlandskap, en vik i morgenlys, eller et ryddig arbeidsbord ovenfra. Det legges en mørk toning over, så motivet tåler det |
-| `team.jpg` | Om oss, stort bilde | 1200×1400 (stående) | Teamet eller daglig leder |
-| `detalj.jpg` | Om oss, rundt utsnitt | 800×800 (kvadrat) | Nærbilde: kaffekopp, notatbok, kalkulator eller penn |
-
-Tips til bildene: dempede, varme farger (grønt, beige, messing) passer best til paletten. Hold JPG-filene under ca. 400 kB hver.
-
-Alt-tekstene står allerede i `index.html`. Oppdater dem hvis motivet blir et annet.
+Dette er illustrasjonsbilder, ikke bilder av byråets faktiske lokaler eller ansatte. Derfor er alt-tekstene generelle. Kilder og lisens er dokumentert i `bilder/KILDER.md`. Bildene kan senere erstattes med egne fotografier under de samme filnavnene.
 
 ## Må fylles inn før publisering
 
